@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     //tenemos que validar que el este MONTADO cuando estamos usando el context
     if (mounted) {
       await Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => HomeScreen(),
+        builder: (context) => HomeScreen.create(),
       ));
     }
   }
